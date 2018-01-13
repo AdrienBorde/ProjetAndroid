@@ -27,10 +27,58 @@ public class MainActivity extends AppCompatActivity {
         });
 
         final ImageButton bcbutton = findViewById(R.id.bcbutton);
+        bcbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent2 = new Intent(MainActivity.this, bc.class);
+                startActivity(intent2);
+            }
+        });
+
         final ImageButton wotlkbutton = findViewById(R.id.wotlkbutton);
+        wotlkbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent3 = new Intent(MainActivity.this, Wotlk.class);
+                startActivity(intent3);
+            }
+        });
+
         final ImageButton catabutton = findViewById(R.id.catabutton);
+        catabutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent4 = new Intent(MainActivity.this, Cata.class);
+                startActivity(intent4);
+            }
+        });
+
         final ImageButton mopbutton = findViewById(R.id.mopbutton);
+        mopbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent5 = new Intent(MainActivity.this, Mop.class);
+                startActivity(intent5);
+            }
+        });
+
         final ImageButton wodbutton = findViewById(R.id.wodbutton);
+        wodbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent6 = new Intent(MainActivity.this, Wod.class);
+                startActivity(intent6);
+            }
+        });
+
         final ImageButton legionbutton = findViewById(R.id.legionbutton);
+        legionbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent7 = new Intent(MainActivity.this, Legion.class);
+                startActivity(intent7);
+            }
+        });
+
     }
 }
